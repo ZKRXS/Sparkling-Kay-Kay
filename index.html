@@ -190,18 +190,16 @@
     /* Hero Logo Watermark */
     .hero-watermark {
       position: absolute;
-      right: 6%;
+      right: 7%;
       top: 56%;
       transform: translateY(-50%);
-      width: auto;
-      max-width: 230px;
-      max-height: 230px;
-      object-fit: contain;
-      opacity: 0.06;
+      width: clamp(175px, 20vw, 255px);
+      height: auto;
+      opacity: 0.085;
       pointer-events: none;
       user-select: none;
       z-index: 0;
-      filter: grayscale(100%);
+      filter: grayscale(15%);
     }
 
     .hero-inner {
@@ -482,15 +480,12 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: auto;
-      max-width: 190px;
-      max-height: 190px;
-      object-fit: contain;
+      width: clamp(190px, 22vw, 260px);
+      height: auto;
       opacity: 0.045;
       pointer-events: none;
       user-select: none;
       z-index: 0;
-      filter: grayscale(100%);
     }
 
     .contact .container {
@@ -773,12 +768,9 @@
         text-align: center;
         padding: 13px 19px;
       }
-      .hero-watermark {
-        right: 4%;
-        top: 56%;
-        max-width: 170px;
-        max-height: 170px;
-        opacity: 0.05;
+      .hero-watermark,
+      .contact-watermark {
+        display: none;
       }
       .about-grid {
         grid-template-columns: 1fr;
@@ -829,14 +821,9 @@
         left: -170px;
         top: -90px;
       }
-      .hero-watermark {
-        max-width: 115px;
-        max-height: 115px;
-        right: 5%;
-        top: auto;
-        bottom: 18px;
-        transform: none;
-        opacity: 0.05;
+      .hero-watermark,
+      .contact-watermark {
+        display: none;
       }
       .eyebrow {
         font-size: 10px;
@@ -929,7 +916,7 @@
             <a class="button button-blue connect-trigger" href="#connect">Connect with us ↗</a>
             <a class="button button-outline" href="#about">Discover our group</a>
           </div>
-          <div class="hero-note">KOCHI, KERALA  ·  JEWELLERY RETAIL  ·  EMERGING BUSINESS OPPORTUNITIES</div>
+          <div class="hero-note">KOCHI, KERALA  ·  JEWELLERY RETAIL  ·  EMERGING BUSINESS OPPORTUNITIES</div>
         </div>
       </div>
     </section>
